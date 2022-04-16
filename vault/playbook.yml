@@ -1,0 +1,7 @@
+#Play1
+- name: This is our first play
+  hosts: webservers
+  become: true
+  tasks:
+    - name: create a dummy file on webserver
+      command: touch /tmp/ansible_dummy.txt

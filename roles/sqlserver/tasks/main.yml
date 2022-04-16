@@ -1,0 +1,7 @@
+---
+# tasks file for sqlserver
+- name: task1
+  command: touch /tmp/sql_play_3_task_1.txt
+  
+- name: task2
+  command: touch /tmp/sql_play_3_task_2.txt

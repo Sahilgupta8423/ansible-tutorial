@@ -1,0 +1,8 @@
+#Play1
+- name: This is our first play
+  hosts: webservers
+  become: true
+  vars_files:
+    - variable2.yml
+  tasks:
+    - include: task.yml

@@ -1,0 +1,11 @@
+#Play1
+- name: This is our first play
+  hosts: webservers, dbservers
+  become: true
+  tasks:
+    - name: first task
+      command: touch /tmp/task/task1.txt
+      ignore_errors: True #error handling
+
+    - name: second task
+      command: touch /tmp/task2.txt   

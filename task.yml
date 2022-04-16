@@ -1,0 +1,30 @@
+- name: task_1
+    command:touch /tmp/task/"{{ var1 }}".txt
+- name: task_2
+     command:touch /tmp/task/"{{ var2 }}".txt
+- name: task_3
+     command:touch /tmp/task/"{{ var3 }}".txt
+- name: task_4
+    command:touch /tmp/task/"{{ var4 }}".txt
+- name: task_5
+     command:touch /tmp/task/"{{ var5 }}".txt
+- name: task_6
+     command:touch /tmp/task/"{{ var6 }}".txt
+- name: task_7
+     command:touch /tmp/task/"{{ var7 }}".txt
+- name: task_8
+     command:touch /tmp/task/"{{ var8 }}".txt
+- name: task_9
+     command:touch /tmp/task/"{{ var9}}".txt
+- name: task_10
+     command:touch /tmp/task/"{{ var10 }}".txt
+- name: task_11
+     command:touch /tmp/task/"{{ var11}}".txt
+- name: task_12
+     command:touch /tmp/task/"{{ var12 }}".txt
+- name: task_13
+     command:touch /tmp/task/"{{ var13 }}".txt
+- name: task_14
+     command:touch /tmp/task/"{{ var14 }}".txt
+- name: task_15
+     command:touch /tmp/task/"{{ var15 }}".txt

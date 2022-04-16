@@ -1,0 +1,10 @@
+#Play1
+- name: This is our first play
+  hosts: webservers
+  become: true
+  vars: 
+    age: 18
+  tasks:
+    - name: creating file using ansible
+      command: touch /tmp/18.txt
+      when: age == 18

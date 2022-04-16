@@ -1,0 +1,8 @@
+- name: This is our first play
+  hosts: webservers
+  become: true
+  tasks:
+    - name: copy a dummy file to webserver
+      copy:
+        src: inventory
+        dest: /tmp/

@@ -1,0 +1,12 @@
+#Play1
+- name: This is our first play
+  hosts: webservers
+  become: true
+  tasks:
+    - name: sleep for 60 sec
+      command: sleep 60
+      async: 70
+      poll: 35
+
+    - name: create a dummy file on webserver
+      command: touch /tmp/ansible_dummy2.txt

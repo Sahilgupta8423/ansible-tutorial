@@ -1,0 +1,15 @@
+#Play1 
+# 3 Space Indentation
+- name: This is our first play
+  hosts: webservers
+  become: true
+  vars:
+     pkg: # Array Created
+       - vsftpd
+       - tree 
+  tasks:
+    - name: install packages
+      apt: 
+        name: "{{ item }}"
+        state: absent
+      with_items: "{{ pkg }}"

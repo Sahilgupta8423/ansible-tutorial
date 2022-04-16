@@ -1,0 +1,55 @@
+#Play1
+- name: This is our first play
+  hosts: webservers
+  become: true
+  vars:
+    your_name: Sahil Gupta
+    dummy_list: #Array List
+      - 1
+      - 10
+      - 20
+      - 30 
+      - 10
+    dummy_list2: 
+      - 30
+      - 40
+      - 10
+      - 50
+
+  tasks:
+    - name: jinja 2
+      debug:
+        msg: "Hello, World"
+
+    - name: jinja 2
+      debug:
+        msg: "Hello {{your_name}}"
+
+    - name: jinja 2
+      debug: 
+        msg: "Hello {{your_name | upper}}"
+      
+
+    - name: jinja 2
+      debug:
+        msg: "Hello {{your_name | replace ('Gupta', 'Sahil') }}"
+
+    - name: jinja 2
+      debug:
+        msg: "{{dummy_list | min }}"
+
+    - name: jinja 2
+      debug:
+        msg: "{{dummy_list | unique }}"
+
+    - name: jinja 2
+      debug:
+        msg: "{{dummy_list | union(dummy_list2) }}"
+
+    - name: jinja 2
+      debug:
+        msg: "{{100 | random }}"
+
+    - name: jinja 2
+      debug:
+        msg: "{{'etc/ansible/ansible.cfg' | basename }}"    

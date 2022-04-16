@@ -1,0 +1,7 @@
+#Play1
+- name: This is our first play
+  hosts: webservers
+  become: true
+  tasks:
+    - name: install nginx on webservers
+      command: sudo apt install nginx -y
